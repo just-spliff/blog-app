@@ -1,33 +1,21 @@
+
+import Featured from "@/components/featured/Featured";
 import styles from "./homepage.module.css";
 import Link from "next/link";
+import CategoryList from "@/components/categorylist/CategoryList";
+import CardList from "@/components/cardlist/CardList";
+import Menu from "@/components/menu/Menu";
+
 
 export default function Home() {
-  return <Link href='/'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Corrupti exercitationem rerum repellendus, numquam magnam voluptatem voluptatibus 
-  dolore vero quae consequatur? Ipsum laudantium distinctio porro. 
-  Iste laboriosam aperiam quos rerum aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Corrupti exercitationem rerum repellendus, numquam magnam voluptatem voluptatibus 
-  dolore vero quae consequatur? Ipsum laudantium distinctio porro. 
-  Iste laboriosam aperiam quos rerum aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Corrupti exercitationem rerum repellendus, numquam magnam voluptatem voluptatibus 
-  dolore vero quae consequatur? Ipsum laudantium distinctio porro. 
-  Iste laboriosam aperiam quos rerum aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Corrupti exercitationem rerum repellendus, numquam magnam voluptatem voluptatibus 
-  dolore vero quae consequatur? Ipsum laudantium distinctio porro. 
-  Iste laboriosam aperiam quos rerum aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Corrupti exercitationem rerum repellendus, numquam magnam voluptatem voluptatibus 
-  dolore vero quae consequatur? Ipsum laudantium distinctio porro. 
-  Iste laboriosam aperiam quos rerum aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Corrupti exercitationem rerum repellendus, numquam magnam voluptatem voluptatibus 
-  dolore vero quae consequatur? Ipsum laudantium distinctio porro. 
-  Iste laboriosam aperiam quos rerum aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Corrupti exercitationem rerum repellendus, numquam magnam voluptatem voluptatibus 
-  dolore vero quae consequatur? Ipsum laudantium distinctio porro. 
-  Iste laboriosam aperiam quos rerum aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Corrupti exercitationem rerum repellendus, numquam magnam voluptatem voluptatibus 
-  dolore vero quae consequatur? Ipsum laudantium distinctio porro. 
-  Iste laboriosam aperiam quos rerum aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  Corrupti exercitationem rerum repellendus, numquam magnam voluptatem voluptatibus 
-  dolore vero quae consequatur? Ipsum laudantium distinctio porro. 
-  Iste laboriosam aperiam quos rerum aspernatur.</Link>;
+  return (
+    <div className={styles.container}>
+      <Featured/>
+      <CategoryList/>
+      <div className={styles.container}>
+        <CardList/>
+        <Menu/>       
+      </div>
+    </div>
+  )
 }
